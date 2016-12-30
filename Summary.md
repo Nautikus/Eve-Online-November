@@ -19,8 +19,6 @@ library(reshape2)
 
 #### Total ISK Destroyed by Region
 
-.
-
 ``` r
 options("scipen"=999, "digits"=4) #stops R from using Scientific Notation when viewing ISK
 
