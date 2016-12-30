@@ -35,5 +35,4 @@ ggplot(data=df, aes(x=regionName, y=totalDest)) + geom_bar(fill="purple3", stat=
   scale_y_continuous(expand = c(0,0), limits = c(0,3.5))
 ```
 
-![](Summary_files/figure-markdown_github/RegionalStats-1.png) Test Sync
->>>>>>> origin/master
+![](Summary_files/figure-markdown_github/RegionalStats-1.png)
