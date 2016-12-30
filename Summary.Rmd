@@ -1,6 +1,6 @@
 ---
 title: "Summary Statistics for Eve Online in November"
-output: html_document
+output: rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -36,5 +36,5 @@ ggplot(data=df, aes(x=regionName, y=totalDest)) + geom_bar(fill="purple3", stat=
   theme(axis.line = element_line(color = "black", size=1, linetype="solid")) +
   labs(title = "Total ISK Destroyed by Region", y="ISK (Trillions)", x="Region") +
   scale_y_continuous(expand = c(0,0), limits = c(0,3.5))
- 
 ```
+Test Sync
