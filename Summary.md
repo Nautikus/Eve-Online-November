@@ -66,5 +66,5 @@ ggplot(data=df, aes(x=regionName, y=totalProd)) + geom_bar(fill="blue3", stat="i
 
 ![](Summary_files/figure-markdown_github/RegionalProd-1.png)
 
-![](Summary_files/figure-markdown_github/RegionalStats-1.png)
+
 
