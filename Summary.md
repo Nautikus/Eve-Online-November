@@ -1,3 +1,4 @@
+
 Summary Statistics for Eve Online in November
 ================
 
@@ -5,6 +6,7 @@ Introduction
 ------------
 
 Below we will use summary statistics to try and recreate some of the information shown in the Power BI Pictures folder. Datasets have been provided by CCP Quant located at <https://community.eveonline.com/news/dev-blogs/monthly-economic-report-november-2016/>
+
 
 ### Graphs and Code
 
@@ -38,6 +40,7 @@ ggplot(data=df, aes(x=regionName, y=totalDest)) + geom_bar(fill="red3", stat="id
 
 ![](Summary_files/figure-markdown_github/RegionalDest-1.png)
 
+
 #### Total ISK Produced by Region
 
 This will graph the amount of ISK (In Trillions) that was produced. To roughly convert this into USD, $15 = 1 Billion ISK.
@@ -60,4 +63,8 @@ ggplot(data=df, aes(x=regionName, y=totalProd)) + geom_bar(fill="blue3", stat="i
   scale_y_continuous(expand = c(0,0), limits = c(0,30))
 ```
 
+
 ![](Summary_files/figure-markdown_github/RegionalProd-1.png)
+
+![](Summary_files/figure-markdown_github/RegionalStats-1.png)
+
