@@ -6,6 +6,8 @@ Introduction
 
 Below we will use summary statistics to try and recreate some of the information shown in the Power BI Pictures folder. Datasets have been provided by CCP Quant located at <https://community.eveonline.com/news/dev-blogs/monthly-economic-report-november-2016/>
 
+To roughly convert the ISK to USD, 1 billion ISK = $15 USD (Price of PLEX)
+
 ### Graphs and Code
 
 First we will need to include the ggplot2 library
@@ -17,7 +19,7 @@ library(reshape2)
 
 #### Total ISK Destroyed by Region
 
-This will graph the amount of ISK (In Trillions) that was destroyed. To roughly convert this into USD, $15 = 1 Billion ISK.
+.
 
 ``` r
 options("scipen"=999, "digits"=4) #stops R from using Scientific Notation when viewing ISK
@@ -41,8 +43,6 @@ ggplot(data=df, aes(x=regionName, y=totalDest)) + geom_bar(fill="red3", stat="id
 ![](Summary_files/figure-markdown_github/RegionalDest-1.png)
 
 #### Total ISK Produced by Region
-
-This will graph the amount of ISK (In Trillions) that was produced. To roughly convert this into USD, $15 = 1 Billion ISK.
 
 ``` r
 options("scipen"=999, "digits"=4) #stops R from using Scientific Notation when viewing ISK
